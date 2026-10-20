@@ -438,7 +438,7 @@ export const businessData = {
         "Significantly higher trust from overseas buyers reviewing official listings",
         "Saved 2+ hours daily spent manually answering basic price & location questions",
       ],
-      liveUrl: "https://realestate-steel-tau.vercel.app",
+      liveUrl: "https://subhania.vercel.app",
       status: "Completed",
     },
     {

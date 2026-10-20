@@ -19,14 +19,14 @@ export interface ProjectItem {
 export const projectsData: ProjectItem[] = [
   {
     id: "real-estate",
-    title: "Al-Haram Real Estate Portal",
+    title: "Subhania Real Estate Portal",
     category: "Real Estate & Lead Generation",
     badge: "Live Website",
     tagline: "High-converting property portal designed for local & overseas buyers",
     description:
       "Modern property directory with searchable listings by budget and Marla/Kanal, high-resolution photo galleries, Google Maps integration, and 1-tap WhatsApp inquiry buttons.",
     image: "/projects/real_estate.jpg",
-    liveUrl: "https://realestate-steel-tau.vercel.app",
+    liveUrl: "https://subhania.vercel.app",
     isDemo: false,
     tags: ["Real Estate", "Search Filters", "WhatsApp Routing", "Local SEO"],
     metrics: [

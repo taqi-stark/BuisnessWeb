@@ -81,7 +81,7 @@ export const PortfolioSection = () => {
                 </Link>
 
                 <a
-                  href="https://realestate-steel-tau.vercel.app"
+                  href="https://subhania.vercel.app"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-100/80 text-slate-700 px-4 py-2.5 text-xs font-bold transition-colors"
@@ -122,7 +122,7 @@ export const PortfolioSection = () => {
                 />
                 <div className="p-4 bg-white border-t border-slate-100 flex items-center justify-between">
                   <div>
-                    <h5 className="font-bold text-xs text-slate-900">Al-Haram Real Estate Portal</h5>
+                    <h5 className="font-bold text-xs text-slate-900">Subhania Real Estate Portal</h5>
                     <p className="text-[11px] text-slate-500">Live listings with WhatsApp inquiry buttons</p>
                   </div>
                   <span className="rounded-md bg-emerald-50 text-emerald-700 text-[11px] font-bold px-2.5 py-1 border border-emerald-200">
