@@ -10,9 +10,9 @@ export const Footer = () => {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <div className="h-9 w-9 rounded-xl bg-blue-600 text-white font-bold text-sm grid place-items-center">
-                AT
+                DD
               </div>
-              <span className="font-bold text-lg text-white">Ali Taqi</span>
+              <span className="font-bold text-lg text-white">Digital Dukaan</span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
               Independent Web & Software Developer specializing in practical digital systems, websites, and POS billing tools for local Pakistani and international businesses.
@@ -62,7 +62,7 @@ export const Footer = () => {
 
         {/* Bottom Copyright Strip */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
-          <p>© {new Date().getFullYear()} Ali Taqi. Digital Solutions for Local Businesses. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Digital Dukaan. Digital Solutions for Local Businesses. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1 text-slate-400">
               <MapPin className="h-3 w-3" /> Punjab, Pakistan

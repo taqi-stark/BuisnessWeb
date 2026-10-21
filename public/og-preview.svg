@@ -1,43 +1,16 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#080B16"/>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="194" cy="112" r="178" fill="url(#glowA)" opacity="0.65"/>
-  <circle cx="1038" cy="504" r="216" fill="url(#glowB)" opacity="0.6"/>
-  <rect x="76" y="72" width="1048" height="486" rx="34" fill="#0F1424" fill-opacity="0.84" stroke="#2C3554"/>
-  <rect x="126" y="128" width="148" height="48" rx="24" fill="#18233F" stroke="#4E6EEB" stroke-opacity="0.45"/>
-  <circle cx="154" cy="152" r="8" fill="#34D399"/>
-  <text x="176" y="158" fill="#E8ECFF" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">OPEN TO WORK</text>
-  <text x="126" y="258" fill="#F4F7FF" font-family="JetBrains Mono, monospace" font-size="74" font-weight="700">Ali Taqi</text>
-  <text x="126" y="318" fill="#94A3C8" font-family="Work Sans, Arial, sans-serif" font-size="31" font-weight="600">Python backend engineer focused on scalable APIs, async systems,</text>
-  <text x="126" y="358" fill="#94A3C8" font-family="Work Sans, Arial, sans-serif" font-size="31" font-weight="600">and infrastructure that stays reliable under real traffic.</text>
-  <rect x="126" y="420" width="154" height="44" rx="22" fill="#1A2746" stroke="#4465EA" stroke-opacity="0.55"/>
-  <rect x="294" y="420" width="160" height="44" rx="22" fill="#1A2746" stroke="#4465EA" stroke-opacity="0.55"/>
-  <rect x="468" y="420" width="126" height="44" rx="22" fill="#1A2746" stroke="#4465EA" stroke-opacity="0.55"/>
-  <text x="158" y="448" fill="#E8ECFF" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700">Django</text>
-  <text x="326" y="448" fill="#E8ECFF" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700">FastAPI</text>
-  <text x="500" y="448" fill="#E8ECFF" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700">Docker</text>
-  <rect x="744" y="160" width="274" height="198" rx="28" fill="#111A32" stroke="#4157AE" stroke-opacity="0.45"/>
-  <rect x="774" y="196" width="172" height="14" rx="7" fill="url(#line)"/>
-  <rect x="774" y="232" width="208" height="14" rx="7" fill="url(#line)"/>
-  <rect x="774" y="268" width="144" height="14" rx="7" fill="url(#line)"/>
-  <rect x="774" y="304" width="190" height="14" rx="7" fill="url(#line)"/>
-  <text x="744" y="414" fill="#7C8AAE" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">django  •  fastapi  •  postgresql  •  redis</text>
-  <defs>
-    <linearGradient id="bg" x1="70" y1="32" x2="1100" y2="596" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1020"/>
-      <stop offset="1" stop-color="#060910"/>
-    </linearGradient>
-    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(194 112) rotate(90) scale(178)">
-      <stop stop-color="#3B82F6"/>
-      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1038 504) rotate(90) scale(216)">
-      <stop stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="line" x1="774" y1="203" x2="982" y2="203" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#22D3EE"/>
-    </linearGradient>
-  </defs>
+  <rect width="1200" height="630" fill="#151214"/>
+  <path d="M0 0h1200v12H0z" fill="#C7A45A"/>
+  <circle cx="1030" cy="260" r="260" fill="#651B2A" fill-opacity=".34"/>
+  <rect x="82" y="86" width="62" height="62" fill="#C7A45A"/>
+  <text x="113" y="126" text-anchor="middle" fill="#151214" font-family="Arial,sans-serif" font-size="23" font-weight="700">DD</text>
+  <text x="82" y="238" fill="#C7A45A" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="4">WEBSITES · SOFTWARE · DIGITAL GROWTH</text>
+  <text x="82" y="340" fill="#F5F2EC" font-family="Arial,sans-serif" font-size="82" font-weight="700" letter-spacing="-3">Digital Dukaan</text>
+  <text x="86" y="405" fill="#D0C9BE" font-family="Arial,sans-serif" font-size="30">Thoughtful websites and practical software for growing businesses.</text>
+  <rect x="82" y="475" width="1036" height="1" fill="#FFFFFF" fill-opacity=".18"/>
+  <text x="82" y="524" fill="#DCC58E" font-family="Arial,sans-serif" font-size="18" letter-spacing="2">BUSINESS WEBSITES</text>
+  <circle cx="348" cy="518" r="3" fill="#C7A45A"/>
+  <text x="373" y="524" fill="#DCC58E" font-family="Arial,sans-serif" font-size="18" letter-spacing="2">POS &amp; INVENTORY</text>
+  <circle cx="652" cy="518" r="3" fill="#C7A45A"/>
+  <text x="677" y="524" fill="#DCC58E" font-family="Arial,sans-serif" font-size="18" letter-spacing="2">CUSTOM SOFTWARE</text>
 </svg>

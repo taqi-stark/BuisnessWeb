@@ -28,7 +28,7 @@ export default function Home() {
 
   return <div className="portfolio-site">
     <header className="site-nav">
-      <a className="site-brand" href="#home" aria-label="Ali Taqi home"><span className="brand-mark">AT</span><span><b>Ali Taqi</b><small>Independent developer</small></span></a>
+      <a className="site-brand" href="#home" aria-label="Digital Dukaan home"><span className="brand-mark">DD</span><span><b>Digital Dukaan</b><small>Websites & software</small></span></a>
       <button className="menu-toggle" aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
       <nav className={menuOpen ? "nav-links is-open" : "nav-links"}>
         <a href="#projects" onClick={() => setMenuOpen(false)}>Selected work</a><a href="#services" onClick={() => setMenuOpen(false)}>What I do</a><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
@@ -64,7 +64,7 @@ export default function Home() {
       <section id="contact" className="snap-section contact-section">
         <div className="contact-inner"><div className="eyebrow"><span className="eyebrow-dot" />Have something in mind?</div><h2>Let’s make it<br /><em>work better.</em></h2><p>Tell me what you’re building or what’s slowing your business down. We’ll figure out the right next step together.</p><a className="button button-gold" href={whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={17} />Start a WhatsApp conversation<ArrowUpRight size={16} /></a><div className="contact-details"><a href={`mailto:${businessData.profile.email}`}>{businessData.profile.email}</a><a href="tel:+923448280359"><Phone size={14} />{businessData.profile.whatsappDisplay}</a></div></div>
         <div className="contact-aside"><Code2 size={24} /><span>Independent by design.</span><p>Thoughtful websites and practical software for ambitious businesses.</p><small>BASED IN PAKISTAN · WORKING EVERYWHERE</small></div>
-        <footer className="site-footer"><span>© {new Date().getFullYear()} Ali Taqi</span><span>Designed & built with intention</span><a href="#home">Back to top ↑</a></footer>
+        <footer className="site-footer"><span>© {new Date().getFullYear()} Digital Dukaan</span><span>Designed & built with intention</span><a href="#home">Back to top ↑</a></footer>
       </section>
     </main>
   </div>;

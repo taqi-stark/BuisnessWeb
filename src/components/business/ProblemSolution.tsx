@@ -73,7 +73,7 @@ export const ProblemSolution = () => {
                   <CheckCircle2 className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900">The Ali Taqi Way (Smooth & Automated)</h3>
+                  <h3 className="text-lg font-bold text-slate-900">The Digital Dukaan Way (Smooth & Automated)</h3>
                   <p className="text-xs text-emerald-700 font-medium">Simple digital tools built for your staff</p>
                 </div>
               </div>

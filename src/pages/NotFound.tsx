@@ -20,7 +20,7 @@ const NotFound = () => {
             className="flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white py-3 text-xs font-bold transition-all shadow-sm"
           >
             <Home className="h-4 w-4" />
-            <span>Return to Ali Taqi Homepage</span>
+            <span>Return to Digital Dukaan</span>
           </Link>
 
           <a

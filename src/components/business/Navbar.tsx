@@ -38,16 +38,16 @@ export const Navbar = () => {
         {/* Brand Logo */}
         <a href="/#top" className="flex items-center gap-3 group">
           <div className="h-10 w-10 rounded-xl bg-slate-900 text-white font-bold text-base grid place-items-center shadow-md group-hover:bg-blue-600 transition-colors">
-            AT
+            DD
           </div>
           <div>
             <div className="font-bold text-slate-900 text-base leading-tight tracking-tight flex items-center gap-1.5">
-              Ali Taqi
+              Digital Dukaan
               <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-0.5 text-[10px] font-semibold text-blue-700 border border-blue-200/60">
                 <Sparkles className="h-2.5 w-2.5 text-blue-600" /> Digital Solutions
               </span>
             </div>
-            <p className="text-[11px] text-slate-500 font-medium">Web & Software for Local Businesses</p>
+            <p className="text-[11px] text-slate-500 font-medium">Business websites & software</p>
           </div>
         </a>
 

@@ -1,6 +1,6 @@
-# Ali Taqi — Python Backend Engineer Portfolio
+# Digital Dukaan — Business Websites & Software
 
-Personal portfolio web application showcasing backend architecture, API designs, distributed systems, and real-time platforms.
+Digital Dukaan business website for showcasing web, POS, and custom software projects and services.
 
 ## 🚀 Tech Stack
 

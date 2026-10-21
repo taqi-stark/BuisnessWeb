@@ -70,13 +70,13 @@ export interface FAQItem {
 
 export const businessData = {
   profile: {
-    name: "Ali Taqi",
+    name: "Digital Dukaan",
     title: "Web & Software Developer",
-    positioning: "Digital Solutions for Local Businesses",
+    positioning: "Websites & Software for Local Businesses",
     location: "Punjab, Pakistan · Serving Nationwide & Remote",
     whatsappNumber: "923448280359",
     whatsappDisplay: "+92 344 8280359",
-    email: "alitaqiuos@gmail.com",
+    email: "digitaldukaan.dd@gmail.com",
     availability: "Available for New Client Projects",
     defaultWhatsAppMessage: "Hi Ali, I found your website and I'd like to discuss a website/software solution for my business.",
   },
