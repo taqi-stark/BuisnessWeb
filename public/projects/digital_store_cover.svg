@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 576" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="105" y1="25" x2="1085" y2="570" gradientUnits="userSpaceOnUse"><stop stop-color="#f5efe3"/><stop offset="1" stop-color="#e9dfcf"/></linearGradient>
+    <linearGradient id="photo" x1="665" y1="110" x2="1130" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#d6c7b1"/><stop offset=".55" stop-color="#f1e9db"/><stop offset="1" stop-color="#b69d82"/></linearGradient>
+    <linearGradient id="fabric" x1="840" y1="210" x2="1054" y2="484" gradientUnits="userSpaceOnUse"><stop stop-color="#c8b29c"/><stop offset=".48" stop-color="#e5d7c7"/><stop offset="1" stop-color="#9a806d"/></linearGradient>
+    <linearGradient id="green" x1="886" y1="435" x2="1124" y2="487" gradientUnits="userSpaceOnUse"><stop stop-color="#168b60"/><stop offset="1" stop-color="#08744e"/></linearGradient>
+    <filter id="shadow" x="630" y="95" width="570" height="444" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="16"/></filter>
+    <pattern id="grain" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="1" cy="2" r=".6" fill="#fff" fill-opacity=".22"/><circle cx="7" cy="6" r=".45" fill="#715d49" fill-opacity=".13"/></pattern>
+  </defs>
+  <path fill="url(#paper)" d="M0 0h1200v576H0z"/>
+  <path stroke="#d9d0c2" d="M0 48.5h1200"/>
+  <text x="58" y="31" fill="#30251f" font-family="Georgia,serif" font-size="21" letter-spacing="-1.3">StyleConnect</text>
+  <text x="171" y="30" fill="#a36d50" font-family="Arial,sans-serif" font-size="8" letter-spacing="2.1">STUDIO</text>
+  <g fill="#4d443d" font-family="Arial,sans-serif" font-size="9" font-weight="600" letter-spacing=".7">
+    <text x="450" y="29">FEATURED</text><text x="522" y="29">COLLECTION</text><text x="617" y="29">HOW IT WORKS</text>
+  </g>
+  <rect x="852" y="13" width="119" height="23" rx="12" fill="#e6e8dc" stroke="#9bbca6"/>
+  <circle cx="868" cy="24.5" r="6" stroke="#078657" stroke-width="1.2"/><path d="m866 22 1.3 2.6 2.6 1.3m-3.9-1.3 2.7-2.6" stroke="#078657" stroke-width=".8"/>
+  <text x="879" y="28" fill="#078657" font-family="Arial,sans-serif" font-size="8" font-weight="700">+92 344 8280359</text>
+  <rect x="982" y="13" width="78" height="23" rx="12" stroke="#cdc4b7"/>
+  <path d="M997 21h9v9h-9zM999 21v-2h5v2" stroke="#30251f" stroke-width="1"/>
+  <text x="1012" y="28" fill="#30251f" font-family="Arial,sans-serif" font-size="8">Bag</text><circle cx="1048" cy="24.5" r="8" fill="#30251f"/><text x="1045.5" y="27.5" fill="#fff" font-family="Arial,sans-serif" font-size="8">0</text>
+
+  <rect x="58" y="87" width="254" height="24" rx="12" fill="#e5e8dc" stroke="#a4c3ab"/>
+  <path d="m73 99 4-7 4 7-4 7-4-7Zm4-7v14m-4-7h8" stroke="#17845e" stroke-width="1"/>
+  <text x="88" y="102" fill="#16825c" font-family="Arial,sans-serif" font-size="9" font-weight="700">WhatsApp Commerce Demo</text>
+  <path stroke="#91ad9a" d="M226 92v14"/><text x="238" y="102" fill="#16825c" font-family="monospace" font-size="8">+92 344 8280359</text>
+
+  <g fill="#30251f" font-family="Georgia,serif" font-size="41" letter-spacing="-1.25">
+    <text x="58" y="174">Effortless</text><text x="58" y="224">elegance. Instant</text><text x="58" y="274">WhatsApp ordering.</text>
+  </g>
+  <g fill="#6f6257" font-family="Arial,sans-serif" font-size="12">
+    <text x="58" y="315">A considered apparel edit where customers order directly into</text>
+    <text x="58" y="335">WhatsApp in a single tap. Browse the collection, choose your</text>
+    <text x="58" y="355">favorites, and send a ready-to-confirm order.</text>
+  </g>
+  <rect x="58" y="378" width="155" height="39" rx="20" fill="#2d241f"/>
+  <text x="77" y="402" fill="#f7f0e6" font-family="Arial,sans-serif" font-size="10" font-weight="600">Shop the Collection</text><path d="M193 398h9m-4-4 4 4-4 4" stroke="#f7f0e6" stroke-width="1.2"/>
+  <rect x="225" y="378" width="183" height="39" rx="20" fill="#e6e8dc" stroke="#4e9c79"/>
+  <circle cx="244" cy="397" r="6" stroke="#16825c" stroke-width="1.1"/><path d="m242 394 1.3 2.5 2.7 1.5m-4-1.5 2.8-2.5" stroke="#16825c" stroke-width=".8"/>
+  <text x="257" y="401" fill="#16825c" font-family="Arial,sans-serif" font-size="9" font-weight="600">Test Live WhatsApp Order</text>
+  <path stroke="#d4cbbd" d="M58 436h450"/>
+  <g fill="#30251f" font-family="Georgia,serif" font-size="18" font-weight="700"><text x="58" y="466">3.2×</text><text x="214" y="466">&lt; 30s</text><text x="370" y="466">0%</text></g>
+  <g fill="#988a7a" font-family="Arial,sans-serif" font-size="8"><text x="58" y="481">Higher checkout conversion</text><text x="214" y="481">Average 1-click order time</text><text x="370" y="481">Monthly platform fees</text></g>
+
+  <rect x="640" y="112" width="508" height="365" rx="15" fill="#695746" fill-opacity=".22" filter="url(#shadow)"/>
+  <rect x="650" y="94" width="500" height="369" rx="15" fill="url(#photo)"/>
+  <path d="M650 345c70-45 126-47 181-19 53 27 86 48 155 19 56-24 116-17 164 17v101H650V345Z" fill="#e9dfd0"/>
+  <path d="M671 119c11 48 28 82 47 106 15 18 25 41 27 64m-57-139c31 24 55 52 71 83m-50-103c-3 36-1 69 8 100" stroke="#617451" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  <path d="M673 260c14 5 30 9 44 5 10-3 17-13 17-25v-43c-20 3-38 13-49 30-7 11-11 21-12 33Z" fill="#a78e74"/>
+  <path d="M750 346 834 194l227 10 65 188-102 72-215-35-59-83Z" fill="url(#fabric)"/>
+  <path d="m834 194 73 123 154 75m-227-198 29 138 144 84m-173-71 86-59 111-69m-83 128 90-45 55-75m-281 116 106-38 121 27" stroke="#f5ebdd" stroke-opacity=".72" stroke-width="5" stroke-linecap="round"/>
+  <path d="M837 203c30-29 63-35 94-18 15 8 20 19 18 34-2 16-17 21-36 15l-32-11 21 24c9 11 11 21 4 29-8 9-19 5-29-3l-35-28-16-42Z" fill="#b57f63"/>
+  <path d="M1053 296c32-16 62-12 83 12 10 12 11 24 3 35-9 12-24 11-40 2l-27-18 12 27c5 12 3 22-6 27-11 6-19-1-26-12l-23-39 24-34Z" fill="#bd876d"/>
+  <path d="M837 202c31-25 62-27 88-10m128 108c28-13 53-7 68 12" stroke="#efd2bb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M650 94h500v369H650z" fill="url(#grain)" opacity=".42"/>
+  <rect x="663" y="399" width="474" height="52" rx="16" fill="#f6f0e5" fill-opacity=".96"/>
+  <circle cx="689" cy="425" r="13" fill="#20cb69"/><path d="M683 423c1-4 5-6 9-4 4 2 5 6 3 9l-3 3-5-2-4-6Z" stroke="#fff" stroke-width="1.4"/><path d="m684 419 3 4-2 2m7 3-2-2 2-2" stroke="#fff" stroke-width="1"/>
+  <text x="710" y="421" fill="#30251f" font-family="Arial,sans-serif" font-size="9" font-weight="700">Pre-formatted WhatsApp order</text>
+  <text x="710" y="435" fill="#998b7c" font-family="Arial,sans-serif" font-size="8">Items, sizes &amp; delivery details, ready to send</text>
+  <rect x="1070" y="416" width="51" height="17" rx="9" fill="#d8f7e8"/><text x="1080" y="427" fill="#08744e" font-family="Arial,sans-serif" font-size="7" font-weight="700">LIVE DEMO</text>
+</svg>

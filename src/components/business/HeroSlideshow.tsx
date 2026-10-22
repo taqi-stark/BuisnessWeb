@@ -3,10 +3,10 @@ import { ArrowDown, ArrowLeft, ArrowRight, CheckCircle2, MessageCircle, Sparkles
 import { businessData } from "@/content/business";
 
 const slides = [
-  { title: "Websites that turn visitors into customers", subtitle: "Build trust online and make it easy for customers to find, understand, and contact your business.", image: "/projects/real_estate.jpg", tag: "Business websites", features: ["Mobile-first design", "Local SEO setup", "WhatsApp inquiries"] },
-  { title: "Simple systems for smoother daily work", subtitle: "Replace paper records with clear billing, inventory, and reporting tools built around your workflow.", image: "/projects/pos_system.jpg", tag: "POS & inventory software", features: ["Fast checkout", "Live stock tracking", "Daily reports"] },
-  { title: "Online stores made for local customers", subtitle: "Showcase your products and let customers place orders directly through a simple online experience.", image: "/projects/whatsapp_integration.jpg", tag: "E-commerce & WhatsApp", features: ["Product catalogs", "WhatsApp ordering", "Mobile shopping"] },
-  { title: "Custom software built for your business", subtitle: "Get practical tools tailored to the way your team manages customers, bookings, and operations.", image: "/projects/custom_software.jpg", tag: "Custom business software", features: ["Your workflow", "Useful automation", "Ongoing support"] },
+  { title: "Websites that turn visitors into customers", subtitle: "Build trust online and make it easy for customers to find, understand, and contact your business.", image: "/projects/real_estate.webp", tag: "Business websites", features: ["Mobile-first design", "Local SEO setup", "WhatsApp inquiries"] },
+  { title: "Simple systems for smoother daily work", subtitle: "Replace paper records with clear billing, inventory, and reporting tools built around your workflow.", image: "/projects/pos_system.webp", tag: "POS & inventory software", features: ["Fast checkout", "Live stock tracking", "Daily reports"] },
+  { title: "Online stores made for local customers", subtitle: "Showcase your products and let customers place orders directly through a simple online experience.", image: "/projects/whatsapp_integration.webp", tag: "E-commerce & WhatsApp", features: ["Product catalogs", "WhatsApp ordering", "Mobile shopping"] },
+  { title: "Digital invitations made personal", subtitle: "Give guests a beautiful invitation they can open and share online.", image: "/projects/digital_cards_cover.svg", tag: "Digital cards", features: ["Personal event details", "Interactive design", "Shareable link"] },
 ];
 
 export const HeroSlideshow = () => {

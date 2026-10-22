@@ -242,6 +242,20 @@ export const businessData = {
       icon: "ShoppingBag",
     },
     {
+      id: "digital-cards",
+      title: "Digital Invitation Cards",
+      shortDescription:
+        "Personal, interactive invitations that guests can open and share online from any device.",
+      idealFor: "Weddings, celebrations, and special events",
+      deliverables: [
+        "Custom invitation design with event details",
+        "Interactive digital card experience",
+        "Responsive layout for phones and computers",
+        "Shareable live invitation link",
+      ],
+      icon: "Mail",
+    },
+    {
       id: "booking-systems",
       title: "Booking & Appointment Systems",
       shortDescription:

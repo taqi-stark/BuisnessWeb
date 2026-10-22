@@ -5,6 +5,7 @@ import {
   ShoppingBag, 
   CalendarCheck, 
   Cpu, 
+  Mail,
   ArrowRight, 
   CheckCircle, 
   MessageCircle 
@@ -18,6 +19,7 @@ const ICON_MAP: Record<string, typeof Globe> = {
   ShoppingBag,
   CalendarCheck,
   Cpu,
+  Mail,
 };
 
 export const Services = () => {

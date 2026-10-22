@@ -1,23 +1,25 @@
 import { useEffect, useState } from "react";
-import { ArrowDown, ArrowRight, ArrowUpRight, Check, Code2, Globe2, Layers3, Menu, MessageCircle, Monitor, Phone, ShoppingBag, X } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight, Check, Code2, Globe2, Mail, Menu, MessageCircle, Monitor, Phone, ShoppingBag, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { projectsData } from "@/content/projects";
 import { businessData } from "@/content/business";
 
 const slides = [
-  { label: "Web design & development", title: "A better first impression starts online.", copy: "Fast, considered websites that help your business earn trust and turn visits into conversations.", image: "/projects/real_estate.jpg", icon: Globe2 },
-  { label: "Business software", title: "Make the everyday work feel effortless.", copy: "Purpose-built tools for billing, inventory, customer records, and the work between them.", image: "/projects/pos_system.jpg", icon: Monitor },
-  { label: "Commerce & automation", title: "Make it simpler to do business with you.", copy: "Clear product experiences and practical ordering flows, designed around your customers.", image: "/projects/whatsapp_integration.jpg", icon: ShoppingBag },
+  { label: "Web design & development", title: "A better first impression starts online.", copy: "Fast, considered websites that help your business earn trust and turn visits into conversations.", image: "/projects/real_estate.webp", icon: Globe2 },
+  { label: "Business software", title: "Make the everyday work feel effortless.", copy: "Purpose-built tools for billing, inventory, customer records, and the work between them.", image: "/projects/pos_system.webp", icon: Monitor },
+  { label: "Commerce & automation", title: "Make it simpler to do business with you.", copy: "Clear product experiences and practical ordering flows, designed around your customers.", image: "/projects/whatsapp_integration.webp", icon: ShoppingBag },
+  { label: "Digital invitation cards", title: "Make every invitation feel personal.", copy: "Beautiful, interactive digital cards that make sharing life’s special moments simple.", image: "/projects/digital_cards_cover.svg", icon: Mail },
 ];
 const services = [
   { n: "01", title: "Business websites", price: "From PKR 35,000", copy: "A polished, mobile-first home for your business.", icon: Globe2 },
   { n: "02", title: "POS & inventory", price: "From PKR 55,000", copy: "Billing, stock, and sales reporting in one place.", icon: Monitor },
   { n: "03", title: "Online stores", price: "From PKR 48,000", copy: "Product discovery and easy local checkout.", icon: ShoppingBag },
-  { n: "04", title: "Custom software", price: "Scoped to your needs", copy: "Useful tools shaped around your workflow.", icon: Layers3 },
+  { n: "04", title: "Digital invitation cards", price: "Designed for your event", copy: "Personal, interactive invitations guests can open online.", icon: Mail },
 ];
 
 export default function Home() {
   const [active, setActive] = useState(0);
+  const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     const timer = window.setInterval(() => setActive((i) => (i + 1) % slides.length), 7000);
@@ -25,6 +27,7 @@ export default function Home() {
   }, []);
   const whatsapp = `https://wa.me/${businessData.profile.whatsappNumber}?text=${encodeURIComponent(businessData.profile.defaultWhatsAppMessage)}`;
   const ActiveIcon = slides[active].icon;
+  const featuredProject = projectsData[selectedProjectIndex];
 
   return <div className="portfolio-site">
     <header className="site-nav">
@@ -45,13 +48,26 @@ export default function Home() {
           <div className="hero-actions"><a className="button button-gold" href={whatsapp} target="_blank" rel="noreferrer">Start a conversation<ArrowUpRight size={16} /></a><a className="text-link" href="#projects">Explore selected work<ArrowDown size={15} /></a></div>
           <div className="hero-pagination" aria-label="Service slides">{slides.map((slide, index) => <button key={slide.label} aria-label={`Show ${slide.label}`} aria-current={index === active} onClick={() => setActive(index)}><span /></button>)}</div>
         </div>
-        <div className="hero-visual" key={`visual-${active}`}><div className="visual-image"><img src={slides[active].image} alt="Selected digital project preview" /></div><div className="visual-caption"><span><i />Currently building thoughtful digital products</span><span>PAKISTAN · AVAILABLE WORLDWIDE</span></div><div className="visual-index">0{active + 1}<span> / 0{slides.length}</span></div></div>
+        <div className="hero-visual" key={`visual-${active}`}><div className="visual-image"><img src={slides[active].image} alt={`${slides[active].label} preview`} loading={active === 0 ? "eager" : "lazy"} fetchPriority={active === 0 ? "high" : "auto"} decoding="async" /></div><div className="visual-caption"><span><i />Currently building thoughtful digital products</span><span>PAKISTAN · AVAILABLE WORLDWIDE</span></div><div className="visual-index">0{active + 1}<span> / 0{slides.length}</span></div></div>
         <a href="#projects" className="scroll-cue">Scroll to explore <span /></a>
       </section>
 
       <section id="projects" className="snap-section work-section">
         <div className="section-heading"><div><div className="eyebrow"><span className="eyebrow-dot" />Selected work</div><h2>Made to work beautifully.</h2></div><p>A few examples of websites and software built to solve real business problems.</p></div>
-        <div className="work-grid">{projectsData.map((project, index) => <Link to={`/work/${project.id}`} key={project.id} className="work-card"><div className="work-image"><img src={project.image} alt={project.title} loading="lazy" /><span className="work-number">0{index + 1}</span><span className="work-open"><ArrowUpRight size={17} /></span></div><div className="work-info"><div><span className="work-category">{project.category}</span><h3>{project.title}</h3></div><span className="work-arrow"><ArrowRight size={16} /></span></div></Link>)}</div>
+        <div className="catalog-layout">
+          <article className="featured-work">
+            <Link to={`/work/${featuredProject.id}`} className="featured-image" aria-label={`View ${featuredProject.title}`}>
+              <img src={featuredProject.image} alt={`${featuredProject.title} preview`} loading="lazy" decoding="async" />
+              <span className="featured-image-index">PROJECT / 0{selectedProjectIndex + 1}</span>
+            </Link>
+            <div className="featured-details"><div><span className="work-category">{featuredProject.category}</span><h3>{featuredProject.title}</h3></div><Link to={`/work/${featuredProject.id}`} className="featured-link">View project<ArrowUpRight size={15} /></Link></div>
+          </article>
+          <nav className="catalog-list" aria-label="Choose a project">
+            {projectsData.map((project, index) => <button key={project.id} type="button" aria-pressed={selectedProjectIndex === index} onClick={() => setSelectedProjectIndex(index)} className={`catalog-option${selectedProjectIndex === index ? " is-selected" : ""}`}>
+              <span className="catalog-number">0{index + 1}</span><span className="catalog-option-copy"><small>{project.category}</small><strong>{project.title}</strong></span><ArrowRight size={16} />
+            </button>)}
+          </nav>
+        </div>
         <div className="section-foot"><span>Selected demos · More projects coming soon</span><a href="#services">Explore services<ArrowDown size={14} /></a></div>
       </section>
 
