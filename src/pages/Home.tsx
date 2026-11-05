@@ -5,6 +5,7 @@ import { WhoWeWorkWith } from "@/components/business/WhoWeWorkWith";
 import { EndcapWork } from "@/components/business/EndcapWork";
 import { EndcapServices } from "@/components/business/EndcapServices";
 import { EndcapProcess } from "@/components/business/EndcapProcess";
+import { EndcapFAQ } from "@/components/business/EndcapFAQ";
 import { EndcapContact } from "@/components/business/EndcapContact";
 import { EndcapFooter } from "@/components/business/EndcapFooter";
 import { SpinningBadge } from "@/components/business/SpinningBadge";
@@ -33,6 +34,9 @@ export default function Home() {
 
         {/* Studio Process & About Standards */}
         <EndcapProcess />
+
+        {/* Common Inquiries & AEO Answers */}
+        <EndcapFAQ />
 
         {/* Contact Invitation (Screenshot 5) - Full Vibrant Acid Lime "LET'S talk." */}
         <EndcapContact />

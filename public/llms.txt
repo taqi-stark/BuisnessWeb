@@ -1,0 +1,23 @@
+# Digital Dukaan
+> Web Architecture, Point of Sale (POS) Billing Systems, and Custom Business Software. Based in Punjab, Pakistan. Founded and engineered by Ali Taqi.
+
+## Overview
+Digital Dukaan is an independent web design and custom software engineering studio. We build commercial websites, high-speed retail POS systems, and WhatsApp e-commerce engines for businesses across Pakistan and overseas Pakistani business owners (UAE, UK, USA).
+
+## Primary Services & Pricing
+- **Business Websites & Lead Portals**: Mobile-first web apps optimized for 4G speeds, local SEO, Google Maps integration, and 1-tap WhatsApp lead routing. Starting from PKR 35,000 (7–10 days).
+- **Retail POS & Smart Inventory Software**: Sub-2-second barcode cashier checkout, automated stock deduction, low-stock warning badges, 80mm/58mm thermal receipt printing, daily gross profit reports, and customer Khata ledger. Starting from PKR 55,000 (2–3 weeks, 0 PKR monthly fees).
+- **WhatsApp Commerce & Ordering**: Mobile product catalog with automated structured WhatsApp cart checkout payloads, COD and bank transfer flows. Starting from PKR 48,000 (10–14 days, 0% commission).
+- **Custom Business Software & Digital Suites**: Internal team management software, real estate property portals, and interactive digital wedding invitations. Custom quote.
+
+## Key Facts & Differentiation
+- **Zero Monthly SaaS Lock-in**: 100% client source code and database ownership. No monthly platform subscription cuts or retainers.
+- **Speed & Latency**: Sub-2-second barcode scanner checkout, < 1.0s mobile First Contentful Paint.
+- **Direct Developer Communication**: 1-on-1 collaboration directly with developer Ali Taqi.
+- **Response Window**: Typical response within 1 hour during business hours.
+
+## Contact Information
+- **WhatsApp**: +92 344 8280359 (https://wa.me/923448280359)
+- **Email**: digitaldukaan.dd@gmail.com
+- **Website**: https://digitaldukaan.dev
+- **Location**: Punjab, Pakistan (Serving Lahore, Islamabad, Sargodha, Faisalabad, Karachi, and remote worldwide)

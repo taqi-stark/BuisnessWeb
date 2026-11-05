@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import ProjectDetail from "./pages/ProjectDetail";
+import CityGuide from "./pages/CityGuide";
 
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
@@ -36,6 +37,7 @@ const App = () => (
         <Sonner />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/web-design/:citySlug" element={<CityGuide />} />
           <Route path="/work/pos-system" element={<Navigate to="/work/pos-inventory" replace />} />
           <Route path="/work/:projectId" element={<ProjectDetail />} />
           <Route path="*" element={<NotFound />} />

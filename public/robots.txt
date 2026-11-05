@@ -1,14 +1,35 @@
+# Robots.txt for Digital Dukaan (https://digitaldukaan.dev)
+User-agent: *
+Allow: /
+
+# Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
+User-agent: Applebot
 Allow: /
 
-User-agent: facebookexternalhit
+# AI Answer Engines & Generative Search (AEO / GEO)
+User-agent: GPTBot
 Allow: /
 
-User-agent: *
+User-agent: PerplexityBot
 Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemaps and LLM manifest
+Sitemap: https://digitaldukaan.dev/sitemap.xml

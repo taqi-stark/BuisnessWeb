@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { ArrowUpRightIcon } from "./EndcapIcons";
 import { businessData } from "@/content/business";
 
@@ -70,6 +71,12 @@ export function EndcapFooter() {
           </a>
           <a href="#who-we-work-with" className="hover:opacity-75 transition-opacity">
             Who we work with
+          </a>
+          <Link to="/web-design/lahore" className="hover:opacity-75 transition-opacity">
+            City guides
+          </Link>
+          <a href="#faq" className="hover:opacity-75 transition-opacity">
+            FAQ
           </a>
           <a href="#process" className="hover:opacity-75 transition-opacity">
             Process

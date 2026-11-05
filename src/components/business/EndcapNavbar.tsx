@@ -54,6 +54,12 @@ export function EndcapNavbar({ onOpenConsultation }: EndcapNavbarProps) {
             Who we work with
           </a>
           <a
+            href="#faq"
+            className="transition-opacity hover:opacity-70 focus-visible:opacity-70"
+          >
+            FAQ
+          </a>
+          <a
             href="#process"
             className="transition-opacity hover:opacity-70 focus-visible:opacity-70"
           >

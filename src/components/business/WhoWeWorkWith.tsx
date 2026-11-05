@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   ArrowUpRightIcon,
   ContractorIllustration,
@@ -196,30 +197,48 @@ export function WhoWeWorkWith() {
         </div>
 
         {/* Bottom links row matching screenshot 2 */}
-        <div className="flex flex-wrap items-center gap-8 sm:gap-14 pt-10 font-semibold text-xs sm:text-sm text-ink">
-          <a
-            href="#services"
-            className="group inline-flex items-center gap-2 border-b-2 border-ink pb-1 transition-opacity hover:opacity-75"
-          >
-            <span>Everyone we work with</span>
-            <ArrowUpRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </a>
+        <div className="flex flex-wrap items-center justify-between gap-6 pt-10 border-t border-ink/20 font-semibold text-xs sm:text-sm text-ink">
+          <div className="flex flex-wrap items-center gap-6 sm:gap-10">
+            <a
+              href="#services"
+              className="group inline-flex items-center gap-2 border-b-2 border-ink pb-1 transition-opacity hover:opacity-75"
+            >
+              <span>Everyone we work with</span>
+              <ArrowUpRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
 
-          <a
-            href="#projects"
-            className="group inline-flex items-center gap-2 border-b-2 border-ink pb-1 transition-opacity hover:opacity-75"
-          >
-            <span>City guides</span>
-            <ArrowUpRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </a>
+            <Link
+              to="/web-design/lahore"
+              className="group inline-flex items-center gap-2 border-b-2 border-ink pb-1 transition-opacity hover:opacity-75"
+            >
+              <span>City guides</span>
+              <ArrowUpRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </Link>
 
-          <a
-            href="#contact"
-            className="group inline-flex items-center gap-2 border-b-2 border-ink pb-1 transition-opacity hover:opacity-75"
-          >
-            <span>Free website check</span>
-            <ArrowUpRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </a>
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-2 border-b-2 border-ink pb-1 transition-opacity hover:opacity-75"
+            >
+              <span>Free website check</span>
+              <ArrowUpRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
+          </div>
+
+          {/* Quick city guide pills */}
+          <div className="flex flex-wrap items-center gap-2 font-mono text-[11px] text-muted">
+            <span className="font-bold text-ink">Guides:</span>
+            <Link to="/web-design/lahore" className="hover:text-ink underline">Lahore</Link>
+            <span>·</span>
+            <Link to="/web-design/islamabad" className="hover:text-ink underline">Islamabad</Link>
+            <span>·</span>
+            <Link to="/web-design/sargodha" className="hover:text-ink underline">Sargodha</Link>
+            <span>·</span>
+            <Link to="/web-design/faisalabad" className="hover:text-ink underline">Faisalabad</Link>
+            <span>·</span>
+            <Link to="/web-design/karachi" className="hover:text-ink underline">Karachi</Link>
+            <span>·</span>
+            <Link to="/web-design/overseas" className="hover:text-ink underline">Overseas</Link>
+          </div>
         </div>
       </div>
     </section>
