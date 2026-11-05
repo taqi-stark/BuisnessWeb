@@ -15,10 +15,38 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['"Plus Jakarta Sans"', '"Work Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ['"Hanken Grotesk"', '"Inter"', '"Plus Jakarta Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ['"Hanken Grotesk"', '"Plus Jakarta Sans"', '"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
+        serif: ['"Fraunces"', "Georgia", "serif"],
         mono: ['"JetBrains Mono"', "ui-monospace", "SFMono-Regular", "monospace"],
       },
       colors: {
+        paper: {
+          DEFAULT: "#f2f0e7",
+          light: "#f8f7f3",
+          muted: "#e9eadf",
+          dark: "#dedfd4",
+        },
+        ink: {
+          DEFAULT: "#181a17",
+          light: "#282a26",
+          muted: "#5e6258",
+        },
+        acid: {
+          DEFAULT: "#dce87a",
+          hover: "#d2df67",
+          dark: "#b8c946",
+        },
+        lime: {
+          DEFAULT: "#dce87a",
+          hover: "#d2df67",
+          dark: "#b8c946",
+        },
+        line: {
+          DEFAULT: "#bbbfb1",
+          dark: "#181a17",
+          light: "#dcded7",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
