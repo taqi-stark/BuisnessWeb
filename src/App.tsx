@@ -22,6 +22,16 @@ const ScrollToTop = () => {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
+
+    // Track SPA pageview in Google Tag Manager / Analytics dataLayer
+    if (typeof window !== "undefined" && (window as any).dataLayer) {
+      (window as any).dataLayer.push({
+        event: "pageview",
+        page_path: pathname,
+        page_location: window.location.href,
+        page_title: document.title,
+      });
+    }
   }, [pathname, hash]);
 
   return null;
