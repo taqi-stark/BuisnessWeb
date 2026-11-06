@@ -72,7 +72,7 @@ export function EndcapWork() {
           {projectsData.map((project, idx) => (
             <article
               key={project.id}
-              className="group border border-ink bg-paper-light p-6 sm:p-8 flex flex-col justify-between transition-all hover:shadow-[4px_4px_0px_#181a17]"
+              className="group bg-paper-light p-6 sm:p-8 flex flex-col justify-between transition-all hover:bg-[#eae8dd]"
             >
               {/* Top row */}
               <div>

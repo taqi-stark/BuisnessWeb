@@ -4,9 +4,8 @@ import { ArrowUpRightIcon } from "./EndcapIcons";
 import { businessData } from "@/content/business";
 
 export function EndcapFooter() {
-  const [hoveredLetter, setHoveredLetter] = useState<number | null>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
-  const brandName = "Digital Dukaan";
   const whatsappUrl = `https://wa.me/${businessData.profile.whatsappNumber}?text=${encodeURIComponent(
     businessData.profile.defaultWhatsAppMessage
   )}`;
@@ -18,13 +17,13 @@ export function EndcapFooter() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start pb-10 border-b border-ink/20">
           {/* Brand Wordmark */}
           <div className="md:col-span-4">
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="inline-flex items-baseline gap-1 font-display text-4xl sm:text-5xl font-black tracking-[-0.06em] text-ink"
             >
               <span>Digital Dukaan</span>
               <span className="inline-block w-2.5 h-2.5 bg-acid translate-y-[-2px] border border-ink" />
-            </a>
+            </Link>
             <p className="font-mono text-xs text-muted mt-2">
               Web &amp; Software Studio
             </p>
@@ -63,30 +62,30 @@ export function EndcapFooter() {
           className="flex flex-wrap items-center gap-6 sm:gap-9 py-6 text-xs sm:text-[13px] font-semibold text-ink"
           aria-label="Footer Navigation"
         >
-          <a href="#services" className="hover:opacity-75 transition-opacity">
+          <a href="/#services" className="hover:opacity-75 transition-opacity">
             Services
           </a>
-          <a href="#projects" className="hover:opacity-75 transition-opacity">
+          <a href="/#projects" className="hover:opacity-75 transition-opacity">
             Our work
           </a>
-          <a href="#who-we-work-with" className="hover:opacity-75 transition-opacity">
+          <a href="/#who-we-work-with" className="hover:opacity-75 transition-opacity">
             Who we work with
           </a>
           <Link to="/web-design/lahore" className="hover:opacity-75 transition-opacity">
             City guides
           </Link>
-          <a href="#faq" className="hover:opacity-75 transition-opacity">
+          <a href="/#faq" className="hover:opacity-75 transition-opacity">
             FAQ
           </a>
-          <a href="#process" className="hover:opacity-75 transition-opacity">
+          <a href="/#process" className="hover:opacity-75 transition-opacity">
             Process
           </a>
-          <a href="#about" className="hover:opacity-75 transition-opacity">
+          <a href="/#about" className="hover:opacity-75 transition-opacity">
             About Digital Dukaan
           </a>
-          <a href="#contact" className="hover:opacity-75 transition-opacity">
+          <Link to="/contact" className="hover:opacity-75 transition-opacity">
             Contact
-          </a>
+          </Link>
           <a
             href="#home"
             className="ml-auto text-muted hover:text-ink transition-colors"
@@ -101,33 +100,43 @@ export function EndcapFooter() {
           <span>Engineered with precision</span>
         </div>
 
-        {/* GIGANTIC Edge-to-Edge Wordmark (Screenshots 3 & 4) */}
+        {/* GIGANTIC Edge-to-Edge Wordmark: 100% visible from 'D' to 'N.' on all viewports */}
         <div
-          className="mt-6 sm:mt-10 select-none overflow-hidden cursor-default"
+          className="mt-6 sm:mt-10 select-none overflow-hidden cursor-default w-full"
           aria-hidden="true"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
-          <div className="flex items-baseline justify-center tracking-[-0.07em] font-black text-[13vw] sm:text-[14vw] leading-[0.78] uppercase text-ink whitespace-nowrap">
-            {brandName.split("").map((char, index) => {
-              const isHovered = hoveredLetter === index;
-              return (
-                <span
-                  key={index}
-                  onMouseEnter={() => setHoveredLetter(index)}
-                  onMouseLeave={() => setHoveredLetter(null)}
-                  className={`transition-colors duration-200 ${
-                    char === " " ? "mr-4" : ""
-                  } ${
-                    isHovered
-                      ? "text-[#8a9e34]"
-                      : "text-ink hover:text-[#8a9e34]"
-                  }`}
-                >
-                  {char}
-                </span>
-              );
-            })}
-            <span className="inline-block w-[2.2vw] h-[2.2vw] bg-acid ml-1 border border-ink" />
-          </div>
+          <svg
+            viewBox="0 0 1200 125"
+            className="w-full h-auto block select-none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <text
+              x="25"
+              y="96"
+              fill={isHovered ? "#6e7e23" : "#181a17"}
+              fontFamily="'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif"
+              fontWeight="900"
+              fontSize="112"
+              letterSpacing="-5"
+              textLength="1100"
+              lengthAdjust="spacingAndGlyphs"
+              className="transition-colors duration-300"
+            >
+              DIGITAL DUKAAN
+            </text>
+            {/* Signature Acid Lime Dot */}
+            <rect
+              x="1140"
+              y="38"
+              width="24"
+              height="24"
+              fill="#dce87a"
+              stroke="#181a17"
+              strokeWidth="2.5"
+            />
+          </svg>
         </div>
       </div>
 
@@ -137,13 +146,13 @@ export function EndcapFooter() {
         role="region"
         aria-label="Floating quick contact"
       >
-        <a
-          href="#contact"
+        <Link
+          to="/contact"
           className="inline-flex items-center gap-1.5 bg-acid text-ink px-3.5 py-1.5 text-xs font-bold rounded-sm transition-transform hover:scale-105"
         >
           <span>Let’s talk</span>
           <ArrowUpRightIcon className="w-3.5 h-3.5" />
-        </a>
+        </Link>
         <a
           href={whatsappUrl}
           target="_blank"

@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import ProjectDetail from "./pages/ProjectDetail";
 import CityGuide from "./pages/CityGuide";
+import ContactPage from "./pages/ContactPage";
 
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
@@ -37,6 +38,8 @@ const App = () => (
         <Sonner />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/talk" element={<Navigate to="/contact" replace />} />
           <Route path="/web-design/:citySlug" element={<CityGuide />} />
           <Route path="/work/pos-system" element={<Navigate to="/work/pos-inventory" replace />} />
           <Route path="/work/:projectId" element={<ProjectDetail />} />

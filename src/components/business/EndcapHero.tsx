@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   ArrowUpRightIcon,
   WireframeAutomation,
@@ -86,13 +87,13 @@ export function EndcapHero({ onOpenConsultation }: EndcapHeroProps) {
             </div>
 
             <div className="flex items-center gap-2.5 shrink-0">
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2.5 bg-ink text-paper px-5 py-3 text-xs sm:text-[13px] font-bold rounded-sm shadow-sm transition-all hover:bg-neutral-800"
               >
                 <span>Let’s talk</span>
                 <ArrowUpRightIcon className="w-3.5 h-3.5" />
-              </a>
+              </Link>
 
               <a
                 href="#projects"

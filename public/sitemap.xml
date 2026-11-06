@@ -8,6 +8,14 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Contact & Consultation Page -->
+  <url>
+    <loc>https://digitaldukaan.dev/contact</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
   <!-- Project Case Studies -->
   <url>
     <loc>https://digitaldukaan.dev/work/real-estate</loc>

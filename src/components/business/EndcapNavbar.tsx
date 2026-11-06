@@ -75,13 +75,13 @@ export function EndcapNavbar({ onOpenConsultation }: EndcapNavbarProps) {
 
         {/* Action Button */}
         <div className="flex items-center gap-3">
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center gap-2 bg-ink text-paper px-4 sm:px-5 py-2.5 text-xs sm:text-[13px] font-semibold tracking-tight rounded-sm transition-all hover:bg-neutral-800"
           >
             <span>Let’s talk</span>
             <ArrowUpRightIcon className="w-3.5 h-3.5" />
-          </a>
+          </Link>
 
           {/* Mobile hamburger */}
           <button
